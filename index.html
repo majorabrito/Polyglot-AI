@@ -11,20 +11,31 @@
  <h1>Polyglot-AI Description Generator</h1>
  </header>
  <main>
-    <form>
-        <input type="search" placeholder="Enter a Word" 
+
+    <form class="container">
+        <input type="search" placeholder="Enter a Word..." 
         required 
         autocomplete="off"
-        autofocus>
-                <input type="search" placeholder="Enter a Language" 
+        autofocus
+        id="word">
+                <input 
+                type="search" 
+                placeholder="Enter a Language..." 
         required 
         autocomplete="off"
-        autofocus>
-        <input type="submit" placeholder="Submit">
+        autofocus
+        id="language">
+        <input type="submit" 
+        placeholder="Submit"
+        id="input-button">
     </form>
 
-    <div>
+    <div class="description-container">
     Here it will be the word description
+    <br/>
+     Here it will be the word description
+     <br/>
+     Here it will be the word description
     </div>
  </main>
     <footer>This project was coded by <a href="https://github.com/majorabrito" target="_blank">Maria Leira</a>
