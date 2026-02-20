@@ -5,7 +5,7 @@ function descriptionGenerator(event){
     strings: "here is the word descrption",
     autoStart: true,
     delay: 0.5,
-    cursor: "",
+    cursor: "",5
   });
 }
 
