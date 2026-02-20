@@ -1,20 +1,21 @@
 body {
-    background:#f4f4f9;
+background: -webkit-linear-gradient(273deg, #4cb5f5,#e7e8ee,#b3c100);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(273deg, #4cb5f5,#e7e8ee,#b3c100);              
 color:#333333;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
     margin: 40px;
-    text-align: center;   
+    text-align: center;  
+    color: #203F49; 
 }
 
 a{
-    color:#858585;
+    color:#203F49;
 }
 
 .container {
-    background: rgb(196, 195, 195);
+    background: #B6B8B5;
         border-radius: 20px 20px 0px 0px;
         padding: 30px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -27,33 +28,32 @@ a{
 #word{
 padding: 15px 30px;
 border-radius: 10px;
-border:1px solid #333333;
+border: none;
 }
 
 #language {
 padding: 15px 30px;
 border-radius: 10px;
 border: none;
-border:1px solid #333333;
 }
 
 #input-button {
 padding: 16px 30px;
 border-radius: 23px;
 border: none;
-background: #333333;
+background: #B3C100;
 color: white;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #input-button:hover {
-  background-color:#535353;
+  background-color:#d3e204;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(41, 41, 41, 0.3);
 }
 .description-container {
-    background: rgb(233, 231, 231);
-        border-left: 5px solid black;
+    background: #B6B8B5;
+        border-left: 5px solid #203F49;
         padding: 50px 30px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       border-radius: 0px 0px 20px 20px;
