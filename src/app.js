@@ -1,8 +1,9 @@
 function displayDescription(response) {
-  let descriptionElement = document.querySelector("#descrption-element");
-  descriptionElement.innerHTML = ""; 
 
-  new Typewriter("#descrption-element", {
+    let descriptionElement = document.querySelector("#description-element");
+    descriptionElement.innerHTML = "";
+
+  new Typewriter("#description-element", {
     strings: response.data.answer,
     autoStart: true,
     delay: 30,
@@ -24,7 +25,15 @@ function descriptionGenerator(event) {
 
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
+  
 
+  let descriptionElement = document.querySelector("#description-element");
+  descriptionElement.classList.remove("hidden");
+  descriptionElement.innerHTML = `<div class="loading">
+        <span><img src="https://cdn.pixabay.com/animation/2023/08/10/06/24/06-24-17-858_512.gif" width="50px" class="image"/>
+    Generating the meaning of ${userWord}...</span>
+    </div>`;
+ 
 
   axios.get(apiUrl).then(displayDescription)
     
