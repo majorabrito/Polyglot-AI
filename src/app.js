@@ -22,7 +22,6 @@ function descriptionGenerator(event) {
   
   let prompt = `Word: ${userWord}. Target Language: ${userLanguage}. Provide the translation and its description in ${userLanguage}.`;
 
-let userLanguage= document.querySelector("#language").value;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
